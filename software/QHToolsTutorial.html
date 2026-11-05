@@ -14,7 +14,7 @@
   <style>
     /* ─── Tutorial Section ─── */
     .tutorial-section {
-      padding: 48px 0 64px;
+      padding: 24px 0 64px;
     }
 
     .tutorial-columns {
@@ -168,6 +168,56 @@
       color: #f6ad55;
     }
 
+    /* ─── Sub-zone heading (Tính Toán / Triển Khai) ─── */
+    .tut-subzone {
+      margin-bottom: 28px;
+    }
+
+    .tut-subzone .tutorial-columns {
+      margin-top: 14px;
+    }
+
+    .tut-subzone-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 28px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .tut-subzone:first-of-type .tut-subzone-header {
+      margin-top: 8px;
+    }
+
+    .tut-subzone-icon {
+      font-size: 15px;
+      line-height: 1;
+    }
+
+    .tut-subzone-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #63b3ed;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 0;
+    }
+
+    body.light .tut-subzone-title {
+      color: var(--accent);
+    }
+
+    .tut-subzone-sub {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+
     /* ─── Contact Section ─── */
     .tutorial-contact {
       padding: 48px 0 80px;
@@ -290,18 +340,16 @@
           <button class="active" id="themeDark">🌙</button>
           <button id="themeLight">☀️</button>
         </div>
-        <a class="btn" href="../index.html" data-i18n="soft.back">← Về trang chủ</a>
       </div>
     </div>
   </header>
 
   <main class="container">
     <!-- ─── Intro (giống QHTools) ─── -->
-    <section class="project-detail" style="max-width:100%; padding-bottom:0;">
-      <a class="btn" href="QHTools.html" style="margin-bottom:24px;">← Quay lại QH-Tools</a>
+    <section class="project-detail" style="max-width:100%; padding: 40px 0 0;">
       <span class="section-label">HƯỚNG DẪN SỬ DỤNG</span>
       <h1>QH-Tools — Hướng dẫn sử dụng</h1>
-      <p class="detail-desc">
+      <p class="detail-desc" style="margin-bottom:20px;">
         Tổng hợp các video hướng dẫn cài đặt và sử dụng QH-Tools. Bấm vào từng mục để xem video hướng dẫn trên YouTube.
       </p>
     </section>
@@ -321,90 +369,134 @@
           </div>
         </div>
 
-        <div class="tutorial-columns">
-          <!-- Cột trái — BTCT -->
-          <div>
-            <div class="tut-group">
-              <div class="tut-group-title">Cài Đặt &amp; Thiết Lập</div>
-              <ul class="tut-list">
-                <li><a href="https://youtu.be/Ey3807pNwNo?si=bRxYaTQhMXK7Hlf7" target="_blank" rel="noreferrer">Hướng dẫn cài đặt phần mềm QH-Tools<span class="yt-badge">YT</span></a></li>
-                <li><a href="https://youtu.be/1ciIlalGHRE" target="_blank" rel="noreferrer">Giới thiệu giao diện, tạo
-                    tài khoản kích hoạt bản quyền.<span class="yt-badge">YT</span></a></li>
-                <li><a href="https://youtu.be/j6MLOLkm0To" target="_blank" rel="noreferrer">Cập nhật phần mềm QH-Tools<span class="yt-badge">YT</span></a></li>
-              </ul>
-            </div>
-
-            <div class="tut-group">
-              <div class="tut-group-title">Vật Liệu &amp; Tiết Diện</div>
-              <ul class="tut-list">
-                <li><a href="https://youtu.be/Ni1gsvFSbOw" target="_blank" rel="noreferrer">Tạo vật liệu, tạo
-                    tiết diện, gán tiết diện nhanh.<span class="yt-badge">YT</span></a></li>
-
-              </ul>
-            </div>
-
-            <div class="tut-group">
-              <div class="tut-group-title">Tải Trọng &amp; Tổ Hợp Tải Trọng</div>
-              <ul class="tut-list">
-                <li><a href="https://youtu.be/2yvcNFgYOmA" target="_blank" rel="noreferrer">Tạo tải trọng và tổ hợp tải trọng<span class="yt-badge">YT</span></a></li>
-                <li><a href="https://youtu.be/bwaKj9oA1NY" target="_blank" rel="noreferrer">Tính toán tải trọng gió theo TCVN 2737-2023<span class="yt-badge">YT</span></a></li>
-                <li><a href="https://youtu.be/qGCLnuGukgw" target="_blank" rel="noreferrer">Tính toán phổ động đất phương ngang TCVN 9386-2025<span class="yt-badge">YT</span></a></li>
-              </ul>
-            </div>
-
-            <div class="tut-group">
-              <div class="tut-group-title">Tính Toán &amp; Vẽ Chi Tiết Cột</div>
-              <ul class="tut-list">
-                <li><a href="https://youtu.be/CWmf1cVYn2s" target="_blank" rel="noreferrer">Tính toán chi tiết cột TCVN 5574-2018<span class="yt-badge">YT</span></a></li>
-                <li><a href="https://youtu.be/IjtA8t2MD-Q" target="_blank" rel="noreferrer">Lựa Chọn Thép Cột Tự Động Theo Quy Tắc Mong Muốn<span class="yt-badge">YT</span></a></li>
-                <li><a href="https://youtu.be/1jYFz5V9LiI" target="_blank" rel="noreferrer">Vẽ Chi Tiết Cột Nhanh Từ Bảng Tính Cột Bằng Phần Mềm Katapro<span class="yt-badge">YT</span></a></li>
-              </ul>
-            </div>
-
-            <div class="tut-group">
-              <div class="tut-group-title">Tính Toán &amp; Vẽ Chi Tiết Dầm</div>
-              <ul class="tut-list">
-                <li><a href="https://youtu.be/6CugqJs4Kvg" target="_blank" rel="noreferrer">Đặt Tên Dầm Theo Quy Tắc Bất kỳ<span class="yt-badge">YT</span></a></li>
-                <li><a href="#" target="_blank" rel="noreferrer">Tính toán chi tiết dầm TCVN 5574-2018<span class="yt-badge">YT</span></a></li>
-                <li><a href="#" target="_blank" rel="noreferrer">Tự động chọn thép và quy tắc chọn thép dầm tự động<span class="yt-badge">YT</span></a></li>
-              </ul>
+        <!-- ── Subzone 1: Tính Toán ── -->
+        <div class="tut-subzone">
+          <div class="tut-subzone-header">
+            <span class="tut-subzone-icon">📊</span>
+            <div class="tut-subzone-title">
+              Tính Toán
+              <span class="tut-subzone-sub">CALCULATION</span>
             </div>
           </div>
 
-          <!-- Cột phải — BTCT -->
-          <div>
-            <div class="tut-group">
-              <div class="tut-group-title">Tính Toán Sàn</div>
-              <ul class="tut-list">
-                <li><a href="#" target="_blank" rel="noreferrer">Tính toán chi tiết sàn TCVN 5574-2018<span class="yt-badge">YT</span></a></li>
-              </ul>
+          <div class="tutorial-columns">
+            <!-- Cột trái — BTCT Tính Toán -->
+            <div>
+              <div class="tut-group">
+                <div class="tut-group-title">Cài Đặt &amp; Thiết Lập</div>
+                <ul class="tut-list">
+                  <li><a href="https://youtu.be/Ey3807pNwNo?si=bRxYaTQhMXK7Hlf7" target="_blank" rel="noreferrer">Hướng dẫn cài đặt phần mềm QH-Tools<span class="yt-badge">YT</span></a></li>
+                  <li><a href="https://youtu.be/1ciIlalGHRE" target="_blank" rel="noreferrer">Giới thiệu giao diện, tạo
+                      tài khoản kích hoạt bản quyền.<span class="yt-badge">YT</span></a></li>
+                  <li><a href="https://youtu.be/j6MLOLkm0To" target="_blank" rel="noreferrer">Cập nhật phần mềm QH-Tools<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
+
+              <div class="tut-group">
+                <div class="tut-group-title">Vật Liệu &amp; Tiết Diện</div>
+                <ul class="tut-list">
+                  <li><a href="https://youtu.be/Ni1gsvFSbOw" target="_blank" rel="noreferrer">Tạo vật liệu, tạo
+                      tiết diện, gán tiết diện nhanh.<span class="yt-badge">YT</span></a></li>
+
+                </ul>
+              </div>
+
+              <div class="tut-group">
+                <div class="tut-group-title">Tải Trọng &amp; Tổ Hợp Tải Trọng</div>
+                <ul class="tut-list">
+                  <li><a href="https://youtu.be/2yvcNFgYOmA" target="_blank" rel="noreferrer">Tạo tải trọng và tổ hợp tải trọng<span class="yt-badge">YT</span></a></li>
+                  <li><a href="https://youtu.be/bwaKj9oA1NY" target="_blank" rel="noreferrer">Tính toán tải trọng gió theo TCVN 2737-2023<span class="yt-badge">YT</span></a></li>
+                  <li><a href="https://youtu.be/qGCLnuGukgw" target="_blank" rel="noreferrer">Tính toán phổ động đất phương ngang TCVN 9386-2025<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
+
+              <div class="tut-group">
+                <div class="tut-group-title">Tính Toán &amp; Vẽ Chi Tiết Cột</div>
+                <ul class="tut-list">
+                  <li><a href="https://youtu.be/CWmf1cVYn2s" target="_blank" rel="noreferrer">Tính toán chi tiết cột TCVN 5574-2018<span class="yt-badge">YT</span></a></li>
+                  <li><a href="https://youtu.be/IjtA8t2MD-Q" target="_blank" rel="noreferrer">Lựa Chọn Thép Cột Tự Động Theo Quy Tắc Mong Muốn<span class="yt-badge">YT</span></a></li>
+                  <li><a href="https://youtu.be/1jYFz5V9LiI" target="_blank" rel="noreferrer">Vẽ Chi Tiết Cột Nhanh Từ Bảng Tính Cột Bằng Phần Mềm Katapro<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
+
+              <div class="tut-group">
+                <div class="tut-group-title">Tính Toán &amp; Vẽ Chi Tiết Dầm</div>
+                <ul class="tut-list">
+                  <li><a href="https://youtu.be/6CugqJs4Kvg" target="_blank" rel="noreferrer">Đặt Tên Dầm Theo Quy Tắc Bất kỳ<span class="yt-badge">YT</span></a></li>
+                  <li><a href="#" target="_blank" rel="noreferrer">Tính toán chi tiết dầm TCVN 5574-2018<span class="yt-badge">YT</span></a></li>
+                  <li><a href="#" target="_blank" rel="noreferrer">Tự động chọn thép và quy tắc chọn thép dầm tự động<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
             </div>
 
-            <div class="tut-group">
-              <div class="tut-group-title">Tính Toán Móng</div>
-              <ul class="tut-list">
-                <li><a href="#" target="_blank" rel="noreferrer">Tính toán chi tiết móng cọc TCVN 5574-2018<span class="yt-badge">YT</span></a></li>
-                <li><a href="#" target="_blank" rel="noreferrer">Tính toán chi tiết móng đơn TCVN 9362-2012<span class="yt-badge">YT</span></a></li>
-              </ul>
-            </div>
+            <!-- Cột phải — BTCT Tính Toán -->
+            <div>
+              <div class="tut-group">
+                <div class="tut-group-title">Tính Toán Sàn</div>
+                <ul class="tut-list">
+                  <li><a href="#" target="_blank" rel="noreferrer">Tính toán chi tiết sàn TCVN 5574-2018<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
 
-            <div class="tut-group">
-              <div class="tut-group-title">Vẽ API</div>
-              <ul class="tut-list">
-                <li><a href="#" target="_blank" rel="noreferrer">Vẽ Strip tính sàn, móng tự động<span class="yt-badge">YT</span></a></li>
-                <li><a href="#" target="_blank" rel="noreferrer">Vẽ móng cọc hình dạng bất kì<span class="yt-badge">YT</span></a></li>
-                <li><a href="#" target="_blank" rel="noreferrer">Model Etabs, Safe bằng API từ mặt bằng Autocad<span class="yt-badge">YT</span></a></li>
-              </ul>
-            </div>
+              <div class="tut-group">
+                <div class="tut-group-title">Tính Toán Móng</div>
+                <ul class="tut-list">
+                  <li><a href="#" target="_blank" rel="noreferrer">Tính toán chi tiết móng cọc TCVN 5574-2018<span class="yt-badge">YT</span></a></li>
+                  <li><a href="#" target="_blank" rel="noreferrer">Tính toán chi tiết móng đơn TCVN 9362-2012<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
 
-            <div class="tut-group">
-              <div class="tut-group-title">Tiện Ích Khác</div>
-              <ul class="tut-list">
-                <li><a href="#" target="_blank" rel="noreferrer">Dọn rác từ Etabs / Safe / Sap2000 / AutoCAD<span class="yt-badge">YT</span></a></li>
-              </ul>
+              <div class="tut-group">
+                <div class="tut-group-title">Vẽ API</div>
+                <ul class="tut-list">
+                  <li><a href="#" target="_blank" rel="noreferrer">Vẽ Strip tính sàn, móng tự động<span class="yt-badge">YT</span></a></li>
+                  <li><a href="#" target="_blank" rel="noreferrer">Vẽ móng cọc hình dạng bất kì<span class="yt-badge">YT</span></a></li>
+                  <li><a href="#" target="_blank" rel="noreferrer">Model Etabs, Safe bằng API từ mặt bằng Autocad<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
+
+              <div class="tut-group">
+                <div class="tut-group-title">Tiện Ích Khác</div>
+                <ul class="tut-list">
+                  <li><a href="#" target="_blank" rel="noreferrer">Dọn rác từ Etabs / Safe / Sap2000 / AutoCAD<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /tutorial-columns BTCT Tính Toán -->
+        </div><!-- /tut-subzone Tính Toán -->
+
+        <!-- ── Subzone 2: Triển Khai ── -->
+        <div class="tut-subzone">
+          <div class="tut-subzone-header">
+            <span class="tut-subzone-icon">📐</span>
+            <div class="tut-subzone-title">
+              Triển Khai
+              <span class="tut-subzone-sub">DETAILING &amp; DRAFTING</span>
             </div>
           </div>
-        </div><!-- /tutorial-columns BTCT -->
+
+          <div class="tutorial-columns">
+            <!-- Cột trái — Triển Khai -->
+            <div>
+              <div class="tut-group">
+                <div class="tut-group-title">Cài Đặt &amp; Thiết Lập</div>
+                <ul class="tut-list">
+                  <li><a href="https://youtu.be/j1Yvw7HCtCQ" target="_blank" rel="noreferrer">Cài Đặt Chung QH-Tools Autocad<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Cột phải — Triển Khai -->
+            <div>
+              <div class="tut-group">
+                <div class="tut-group-title">Tiện Ích Khác</div>
+                <ul class="tut-list">
+                  <li><a href="https://youtu.be/8Vgmcoz-Ero" target="_blank" rel="noreferrer">Tạo Viewport và quản lý Viewport bằng QH-Tools<span class="yt-badge">YT</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /tutorial-columns Triển Khai -->
+        </div><!-- /tut-subzone Triển Khai -->
       </div><!-- /zone-btct -->
 
       <!-- ══════════════════════════════════════════ -->
